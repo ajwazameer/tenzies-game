@@ -7,18 +7,18 @@ export default function ButtonArea() {
     for (let i = 0; i < 10; i++) {
       arr[i] = {
         id: crypto.randomUUID(),
-        num: Math.floor(Math.random() * 10),
-        isHeld: "false",
+        num: Math.floor(Math.random() * 6) + 1,
+        isHeld: false,
       };
     }
     return arr;
   }
   function toggleHold(id) {
     const filtered = dice.map((dice) => {
-      if (dice.id == id) {
+      if (dice.id === id) {
         return {
           ...dice,
-          isHeld: "true",
+          isHeld: !dice.isHeld,
         };
       } else {
         return {
@@ -44,10 +44,10 @@ export default function ButtonArea() {
 
   function rollDice() {
     const filtered = dice.map((dice) => {
-      if (dice.isHeld == "false") {
+      if (dice.isHeld == false) {
         return {
           ...dice,
-          num: Math.floor(Math.random() * 10),
+          num: Math.floor(Math.random() * 6) + 1,
         };
       } else {
         return {
@@ -58,12 +58,17 @@ export default function ButtonArea() {
     console.log(filtered);
     setDice(filtered);
   }
-
+  const gameWon =
+    dice.every((die) => die.isHeld) &&
+    dice.every((die) => die.num == dice[0].num);
+  let style = {
+    backgroundColor: gameWon ? "#fc35ff" : "#5035ff",
+  };
   return (
     <section className="playground">
       <div className="button-area">{populatedDice}</div>
-      <button className="roll-btn" onClick={rollDice}>
-        Roll
+      <button style={style} className="roll-btn" onClick={rollDice}>
+        {gameWon ? "New Game" : "Roll"}
       </button>
     </section>
   );
