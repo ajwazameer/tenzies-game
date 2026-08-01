@@ -22,9 +22,9 @@ A fun and interactive dice game built with **React** where the goal is to roll u
 
 ## 📸 Screenshots
 
-_Add screenshots here._
+![UI Image](image.png)![UI Iamge2](image-1.png)![Win-Ui](image-2.png)
 
-## 🧠 What I Learned
+## What I Learned
 
 While building this project, I practiced:
 
