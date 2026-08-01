@@ -1,16 +1,77 @@
-# React + Vite
+# 🎲 Tenzies Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and interactive dice game built with **React** where the goal is to roll until all dice show the same value. Players can hold individual dice between rolls, adding a strategic twist to the game.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Roll 10 dice simultaneously
+- Hold dice to keep their values between rolls
+- Win detection when all dice match
+- New Game button to restart instantly
+- Confetti drop using react Confetti
+- Fast and responsive React UI
+- Clean and modern design
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Vite
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+_Add screenshots here._
+
+## 🧠 What I Learned
+
+While building this project, I practiced:
+
+- React components
+- Props and state management
+- Event handling
+- Conditional rendering
+- Array methods (`map`, `every`)
+- Immutable state updates
+- Generating unique IDs
+- Making accessbility improvements using aria tags
+- React hooks (`useState`)
+
+## ▶️ Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/tenzies-game.git
+```
+
+Navigate into the project:
+
+```bash
+cd tenzies-game
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+## 🎯 Future Improvements
+
+- Add a timer
+- Track roll count
+- Save best scores
+- Add animations and sound effects
+- Dark mode support
+
+## 📄 License
+
+This project is open source and available under the MIT License.
